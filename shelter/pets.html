@@ -9,7 +9,7 @@
   <link rel="preload" href="assets/fonts/Georgia-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/Georgia-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/pets.css">
-  <script src="js/index.js" defer></script>
+  <script src="js/page-pets.js" type="module"></script>
 </head>
 <body>
   <header class="header" id="page__pets">
@@ -46,64 +46,7 @@
     <section class="friends">
       <h3 class="friends__title">Our friends who <br> are looking for a house</h3>
       <div class="friends__slider slider">
-        <div class="slider__wrapper">
-            <div class="slider__card card">
-              <img class="card__image" src="assets/images/pets-katrine.png" alt="">
-              <div class="card__description">
-                <p class="card__name">Katrine</p>
-                <a href="#0" class="card__button">Learn more</a>
-              </div>
-            </div>
-            <div class="slider__card card">
-              <img class="card__image" src="assets/images/pets-jennifer.png" alt="">
-              <div class="card__description">
-                <p class="card__name">Jennifer</p>
-                <a href="#0" class="card__button">Learn more</a>
-              </div>
-            </div>
-            <div class="slider__card card">
-              <img class="card__image" src="assets/images/pets-woody.png" alt="">
-              <div class="card__description">
-                <p class="card__name">Woody</p>
-                <a href="#0" class="card__button">Learn more</a>
-              </div>
-            </div>
-            <div class="slider__card card">
-              <img class="card__image" src="assets/images/pets-sophia.png" alt="">
-              <div class="card__description">
-                <p class="card__name">Sophia</p>
-                <a href="#0" class="card__button">Learn more</a>
-              </div>
-            </div>
-            <div class="slider__card card">
-              <img class="card__image" src="assets/images/pets-timmy.png" alt="">
-              <div class="card__description">
-                <p class="card__name">Timmy</p>
-                <a href="#0" class="card__button">Learn more</a>
-              </div>
-            </div>
-            <div class="slider__card card">
-              <img class="card__image" src="assets/images/pets-charly.png" alt="">
-              <div class="card__description">
-                <p class="card__name">Charly</p>
-                <a href="#0" class="card__button">Learn more</a>
-              </div>
-            </div>
-            <div class="slider__card card">
-              <img class="card__image" src="assets/images/pets-scarlett.png" alt="">
-              <div class="card__description">
-                <p class="card__name">Scarlett</p>
-                <a href="#0" class="card__button">Learn more</a>
-              </div>
-            </div>
-            <div class="slider__card card">
-              <img class="card__image" src="assets/images/pets-freddie.png" alt="">
-              <div class="card__description">
-                <p class="card__name">Freddie</p>
-                <a href="#0" class="card__button">Learn more</a>
-              </div>
-            </div>
-        </div>
+        <div class="slider__wrapper"></div>
         <div class="slider__controls">
           <button class="slider__button slider__button-farleft" aria-label="Press the button to the far left" disabled>&lt;&lt;</button>
           <button class="slider__button slider__button-left" aria-label="Press the button to the left" disabled>&lt;</button>
@@ -144,5 +87,8 @@
       </div>
     </div>
   </footer>
+  <div class="overlay"></div>
+  <div class="popup">
+  </div>
 </body>
 </html>

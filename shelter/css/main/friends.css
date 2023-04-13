@@ -38,17 +38,25 @@
   padding: 23px 19px;
   border: 2px solid #f1cdb3;
   border-radius: 100px;
-  transition: border-color, background 0.5s ease-in-out;
+  background-color: transparent;
+  transition: border-color, background-color 0.5s ease-in-out;
 }
 
-.slider__button:hover {
+.slider__button:not(:disabled):hover {
   border-color: #fddcc4;
-  background: #fddcc4;
+  background-color: #fddcc4;
+}
+
+.slider__button:not(:disabled):active {
+  border-color: #f1cdb3;
+  background-color: #f1cdb3;
 }
 
 .slider__button:disabled {
   border-color: #cdcdcd;
+  background-color: transparent;
   color: #cdcdcd;
+  cursor: default;
 }
 
 .slider__wrapper {
@@ -69,6 +77,28 @@
   background: #fafafa;
   cursor: pointer;
   transition: background, border 0.5s ease-in-out;
+}
+
+.slider__card-right {
+  animation-duration: 1s;
+  animation-name: right;
+  animation-fill-mode: forwards;
+}
+
+.slider__card-left {
+  animation-duration: 1s;
+  animation-name: left;
+  animation-fill-mode: forwards;
+}
+
+@keyframes right {
+  from {transform: translateX(100%);}
+  to {transform: translateX(0);}
+}
+
+@keyframes left {
+  from {transform: translateX(-100%);}
+  to {transform: translateX(0);}
 }
 
 .card__description {

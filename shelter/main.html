@@ -9,7 +9,7 @@
   <link rel="preload" href="assets/fonts/Georgia-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/Georgia-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/main.css">
-  <script src="js/index.js" defer></script>
+  <script src="js/page-main.js" type="module"></script>
 </head>
 <body>
   <header class="header" id="page__main">
@@ -64,29 +64,7 @@
       <h3 class="friends__title">Our friends who <br> are looking for a house</h3>
       <div class="friends__slider slider">
         <button class="slider__button slider__button-left" aria-label="Press the button to the left">&#8592;</button>
-        <div class="slider__wrapper">
-            <div class="slider__card card">
-              <img class="card__image" src="assets/images/pets-katrine.png" alt="">
-              <div class="card__description">
-                <p class="card__name">Katrine</p>
-                <a href="#0" class="card__button">Learn more</a>
-              </div>
-            </div>
-            <div class="slider__card card">
-              <img class="card__image" src="assets/images/pets-jennifer.png" alt="">
-              <div class="card__description">
-                <p class="card__name">Jennifer</p>
-                <a href="#0" class="card__button">Learn more</a>
-              </div>
-            </div>
-            <div class="slider__card card">
-              <img class="card__image" src="assets/images/pets-woody.png" alt="">
-              <div class="card__description">
-                <p class="card__name">Woody</p>
-                <a href="#0" class="card__button">Learn more</a>
-              </div>
-            </div>
-        </div>
+          <div class="slider__wrapper"></div>
         <button class="slider__button slider__button-right" aria-label="Press the button to the right">&#8594;</button>
       </div>
       <a href="pets.html" class="friends__button">Get to know the rest</a>
@@ -177,5 +155,8 @@
       </div>
     </div>
   </footer>
+  <div class="overlay"></div>
+  <div class="popup">
+  </div>
 </body>
 </html>
