@@ -27,3 +27,5 @@ Shelter - это [проект](https://github.com/rolling-scopes-school/tasks/b
      - пагинация на странице `pets`
 
 [Макет в figma](https://www.figma.com/file/Yk6EnbY63FyG2PJTFkJDMh/shelter)
+
+Ссылка на проект: [https://wee-owl.github.io/shelter/shelter/main.html](https://wee-owl.github.io/shelter/shelter/main.html)
