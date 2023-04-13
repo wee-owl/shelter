@@ -55,3 +55,21 @@ h6,
 p {
   margin: 0;
 }
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  background-color: #29292999;
+  will-change: transform;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay-active {
+  display: block;
+}
+
+.body-active {
+  overflow-y: hidden;
+}

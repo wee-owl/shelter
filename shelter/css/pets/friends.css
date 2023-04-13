@@ -52,12 +52,26 @@
   transition: background, border 0.5s ease-in-out;
 }
 
+.card__image {
+  animation-duration: 1s;
+  animation-name: cards;
+  animation-fill-mode: forwards;
+}
+
 .card__description {
   display: flex;
   padding: 30px 41.5px;
   flex-direction: column;
   align-items: center;
   gap: 29px;
+  animation-duration: 1s;
+  animation-name: cards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cards {
+  from {opacity: 0;}
+  to {opacity: 100%;}
 }
 
 .card__name {
