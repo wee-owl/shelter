@@ -1,0 +1,10 @@
+@import 'normalize.css';
+@import 'fonts.css';
+@import 'default.css';
+@import 'main/header.css';
+@import 'main/hero.css';
+@import 'main/about.css';
+@import 'main/friends.css';
+@import 'main/help.css';
+@import 'main/addition.css';
+@import 'main/footer.css';

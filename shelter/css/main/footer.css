@@ -1,0 +1,74 @@
+.footer {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background: url("../../assets/images/bg.png") center top/cover no-repeat;
+  background: url("../../assets/images/noise_transparent@2x.png"),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 10%, #262425 70%), #211F20;
+}
+
+.footer__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 40px 0;
+}
+
+.footer__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 140px;
+}
+
+.contact__bonds {
+  display: flex;
+  min-width: 300px;
+  width: 100%;
+  margin-top: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.contact__bonds:last-of-type {
+  gap: 33px;
+}
+
+.contact__title {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+
+.contact__details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+}
+
+.contact__details-icon {
+  transition: all 0.5s ease-in-out;
+}
+
+.contact__details-info {
+  transition: all 0.5s ease-in-out;
+}
+
+.contact__details:hover .contact__details-icon {
+  transform: scale(1.1);
+}
+
+.contact__details:hover .contact__details-info {
+  color: #FFFFFF;
+}
+
+.contact__image {
+  margin-left: 20px;
+}

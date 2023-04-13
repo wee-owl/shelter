@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: normal;
+  font-display: swap;
+	src: url('../assets/fonts/Georgia-regular.woff2') format('woff2'), 
+      url('../assets/fonts/Georgia-regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: bold;
+  font-display: swap;
+	src: url('../assets/fonts/Georgia-Bold.woff2') format('woff2'), 
+      url('../assets/fonts/Georgia-Bold.woff') format('woff');
+}

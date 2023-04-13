@@ -1,0 +1,6 @@
+@import 'normalize.css';
+@import 'fonts.css';
+@import 'default.css';
+@import 'pets/header.css';
+@import 'pets/friends.css';
+@import 'pets/footer.css';
