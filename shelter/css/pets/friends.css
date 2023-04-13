@@ -27,31 +27,34 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 65px;
+  gap: 60px;
 }
 
 .slider__wrapper {
   display: flex;
   max-width: 1200px;
   width: 100%;
+  max-height: 1365px;
   justify-content: space-between;
   align-items: center;
-  gap: 37px 40px;
+  gap: 31px 40px;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .slider__card {
   max-width: 270px;
   width: 100%;
+  border: 1px solid transparent;
   border-radius: 9px;
   background: #fafafa;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: background, border 0.5s ease-in-out;
 }
 
 .card__description {
   display: flex;
-  padding: 25px 41.5px;
+  padding: 30px 41.5px;
   flex-direction: column;
   align-items: center;
   gap: 29px;
@@ -73,13 +76,13 @@
   letter-spacing: 0.06em;
   color: #292929;
   white-space: nowrap;
-  transition: all 0.5s ease-in-out;
+  transition: border-color, background 0.5s ease-in-out;
 }
 
 .slider__card:hover, 
 .slider__card:active {
   background: #ffffff;
-  box-shadow: 0px 0px 20px 10px #fddcc480;
+  border: 1px solid #54545454;
 }
 
 .slider__card:hover .card__button, 
@@ -109,7 +112,7 @@
   line-height: 1.15;
   letter-spacing: 0.06em;
   color: #292929;
-  transition: all 0.5s ease-in-out;
+  transition: border-color, background 0.5s ease-in-out;
 }
 
 .slider__button:not(:disabled):hover {
@@ -131,4 +134,82 @@
 .slider__button-number {
   background: #f1cdb3;
   cursor: default;
+}
+
+@media (max-width: 1279px) {
+  .friends {
+    gap: 30px;
+    padding-bottom: 77px;
+  }
+
+  .friends__slider {
+    gap: 38px;
+    padding: 0 80px;
+  }
+
+  .slider__wrapper {
+    justify-content: space-evenly;
+  }
+
+  .card:nth-of-type(7), 
+  .card:nth-of-type(8) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider__wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 740px) {
+  .friends__slider {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .friends__title {
+    font-size: 30px;
+  }
+
+  .friends__slider {
+    padding: 0 30px;
+  }
+
+  /* .slider__card {
+    max-width: 100%;
+  } */
+
+  .card__image {
+    width: 85vw;
+    margin: 0 auto;
+  }
+
+  .card:nth-of-type(4), 
+  .card:nth-of-type(5), 
+  .card:nth-of-type(6) {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .friends {
+    padding: 41px 10px 43px;
+    gap: 41px;
+  }
+
+  .friends__title {
+    font-size: 25px;
+  }
+
+  .friends__slider {
+    padding: 0 15px;
+    gap: 42px;
+  }
+
+  .slider__controls {
+    gap: 10px;
+  }
 }
