@@ -42,3 +42,53 @@
   letter-spacing: 0.06em;
   color: #545454;
 }
+
+@media (max-width: 1125px) {
+  .help__list {
+    column-gap: 60px;
+  }
+}
+
+@media (max-width: 885px) {
+  .help__item {
+    max-width: 170px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .help__item {
+    max-width: 130px;
+  }
+
+  .help__icon {
+    max-width: 50px;
+  }
+
+  .help__description {
+    font-size: 15px;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 450px) {
+  .help {
+    padding: 41px 15px;
+    gap: 44px;
+  }
+
+  .help__title {
+    font-size: 25px;
+    max-width: 230px;
+  }
+
+  .help__list {
+    max-width: 290px;
+    gap: 30px;
+    justify-content: flex-start;
+  }
+
+  .help__item {
+    gap: 20px;
+  }
+}

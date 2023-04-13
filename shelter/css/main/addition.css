@@ -1,10 +1,14 @@
 .addition {
   display: flex;
-  padding: 80px 0 100px;
+  padding: 80px 10px 100px;
   justify-content: center;
   align-items: center;
   gap: 30px;
   background: #f6f6f6;
+}
+
+.addition__image {
+  min-width: 250px;
 }
 
 .addition__description {
@@ -39,10 +43,11 @@
   justify-content: space-between;
   align-items: center;
   gap: 15px;
+  min-width: 350px;
   padding: 10px 15px;
   background: #f1cdb3;
   border-radius: 9px;
-  transition: all 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
 }
 
 .addition__card:hover {
@@ -62,4 +67,55 @@
   font-size: 12px;
   line-height: 1.5;
   color: #B2B2B2;
+}
+
+@media (max-width: 768px) {
+  .addition {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 450px) {
+  .addition {
+    padding: 43px 10px;
+    gap: 42px;
+  }
+
+  .addition__image {
+    width: 86.67%;
+  }
+
+  .addition__description {
+    gap: 19px;
+  }
+
+  .addition__title {
+    font-size: 25px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 225px;
+  }
+
+  .addition__subtitle {
+    line-height: 1.6;
+    letter-spacing: 0;
+    margin: 0 auto;
+  }
+
+  .addition__card {
+    min-width: 280px;
+    margin: 0 auto;
+    padding: 12px 15px 10px;
+  }
+
+  .addition__card-number {
+    font-size: 15px;
+    line-height: 1.1;
+  }
+
+  .addition__note {
+    text-align: justify;
+    margin: 0 10px;
+  }
 }

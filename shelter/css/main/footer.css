@@ -17,12 +17,13 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 140px;
+  gap: 20px;
 }
 
 .contact__bonds {
   display: flex;
-  min-width: 300px;
+  max-width: 302px;
+  min-width: 295px;
   width: 100%;
   margin-top: 15px;
   flex-direction: column;
@@ -54,11 +55,11 @@
 }
 
 .contact__details-icon {
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .contact__details-info {
-  transition: all 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 
 .contact__details:hover .contact__details-icon {
@@ -70,5 +71,103 @@
 }
 
 .contact__image {
+  min-width: 270px;
   margin-left: 20px;
+}
+
+@media (max-width: 980px) {
+  .footer__container {
+    padding: 30px 64px 0;
+  }
+
+  .footer__contact {
+    flex-wrap: wrap;
+    gap: 65px 35px;
+  }
+
+  .contact__bonds {
+    flex: 1;
+    margin-top: 0;
+  }
+
+  .contact__image {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__contact {
+    justify-content: flex-start;
+    column-gap: 43px;
+  }
+}
+
+@media (max-width: 760px) {
+  .footer__container {
+    padding: 30px 30px 0;
+  }
+
+  .footer__contact {
+    justify-content: space-between;
+    gap: 40px 20px;
+  }
+}
+
+@media (max-width: 670px) {
+  .contact__bonds {
+    min-width: auto;
+  }
+
+  .contact__title {
+    font-size: 30px;
+  }
+
+  .contact__details {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact__bonds {
+    max-width: 100%;
+    min-width: 300px;
+  }
+
+  .contact__title, 
+  .contact__details {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 460px) {
+  .footer__container {
+    padding: 29px 10px 0;
+  }
+
+  .contact__bonds:last-of-type {
+    gap: 42px;
+  }
+
+  .contact__title {
+    max-width: 290px;
+    margin: 0 auto;
+    font-size: 25px;
+  }
+
+  .contact__details {
+    letter-spacing: 0.12em;
+  }
+
+  .contact__image {
+    min-width: 260px;
+    max-height: 269px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact__bonds:last-of-type .contact__details {
+    margin: 0;
+    text-align: start;
+  }
 }
